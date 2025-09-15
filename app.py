@@ -12,7 +12,7 @@ import glob
 st.title("📊 Prédiction des retraits GAB (Prophet + LSTM)")
 
 # --- Charger le modèle LSTM ---
-lstm_model = load_model("lstm_model.h5")  # assure-toi que le fichier est lstm_model.h5
+lstm_model = load_model("lstm_model.h5", compile=False)  # assure-toi que le fichier est lstm_model.h5
 
 # --- Charger les scalers ---
 scaler_X = joblib.load("scaler_X.pkl")
